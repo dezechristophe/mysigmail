@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import { i18n } from './plugins/i18n.js'
 import App from './App.vue'
 import store from './store/store'
 import router from './router'
@@ -49,5 +50,6 @@ Vue.directive('page-loading', (el, binding) => {
 new Vue({
   store,
   router,
+  i18n,
   render: h => h(App)
 }).$mount('#app')

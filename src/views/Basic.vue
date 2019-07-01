@@ -13,6 +13,11 @@
               :crop-height="200"
               @upload="onUpload"
             />
+            <encode
+              :crop-width="200"
+              :crop-height="200"
+              @encode="onEncode"
+            />
             <el-row :gutter="20">
               <el-col :span="16">
                 <el-input
@@ -110,13 +115,15 @@ import { mapState } from 'vuex'
 import { guid } from '../util/helpers'
 import FieldItem from './FieldItem'
 import Upload from '@/components/Upload'
+import Encode from '@/components/Encode'
 
 export default {
   name: 'Basic',
 
   components: {
     FieldItem,
-    Upload
+    Upload,
+    Encode
   },
 
   data () {
@@ -174,6 +181,9 @@ export default {
       this.onAddLink()
     },
     onUpload (url) {
+      this.$store.dispatch('updateImage', { link: url })
+    },
+    onEncode (url) {
       this.$store.dispatch('updateImage', { link: url })
     }
   }

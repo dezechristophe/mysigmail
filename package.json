@@ -16,6 +16,7 @@
     "nprogress": "^0.2.0",
     "vue": "^2.5.17",
     "vue-analytics": "^5.16.0",
+    "vue-i18n": "^8.11.2",
     "vue-router": "^3.0.1",
     "vue-social-sharing": "^2.4.3",
     "vuedraggable": "^2.16.0",

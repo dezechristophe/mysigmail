@@ -1,7 +1,7 @@
 <template>
   <div class="config-panel">
     <div class="config-panel__header">
-      <h2>{{ $route.meta.title }}</h2>
+      <h2> {{ $t('hello') }} ****  {{ $route.meta.title }}</h2>
     </div>
     <router-view />
   </div>
