@@ -11,6 +11,7 @@ export const i18n = new VueI18n({
     },
     fr: {
       hello: 'bonjour'
+
     }
   }
 
